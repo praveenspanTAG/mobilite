@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Mobility-Service
+      
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driverClassName: org.postgresql.Driver 
+    url: jdbc:postgresql://localhost:5432/mobility   
+    username: postgres
+    password: root
+    
+  sql:
+    init:
+      platform: postgres  
+      
+server:
+  port: 8090
